@@ -7,7 +7,9 @@ import CustomLayout from './containers/Layout';
 function App() {
   return (
     <div className="App">
-      <CustomLayout />
+      <CustomLayout>
+
+      </CustomLayout>
     </div>
   );
 }

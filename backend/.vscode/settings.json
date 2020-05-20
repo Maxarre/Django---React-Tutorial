@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": "C:\\Users\\maxen\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "team.showWelcomeMessage": false,
+    "editor.formatOnSave": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintPath": "/path/to/pylint",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "python.linting.pylintEnabled": true,
+    "[python]": {
+        "editor.formatOnSave": true
+    },
+    "python.venvPath": "os.environ['VIRTUAL_ENV']"
+}

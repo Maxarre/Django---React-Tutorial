@@ -3,4 +3,3 @@ Launch Windows cmd in VSC: C:\Windows\System32\cmd.exe
 Create Virtual Env, activation command Windows: D:\\Desktop\GitHub\Django---React-Tutorial\env\Scripts\activate.bat
 
 Install all plugins for project
-

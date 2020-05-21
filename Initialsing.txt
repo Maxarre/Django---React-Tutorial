@@ -1,11 +1,34 @@
-BACKEND:
+Project Creation:
+    - Create project directory
 
-    Launch Windows cmd in VSC: C:\Windows\System32\cmd.exe
+    - Create Backend directory and Frontend directory
 
-    Create Virtual Env, activation command Windows: D:\\Desktop\GitHub\Django---React-Tutorial\env\Scripts\activate.bat
-
-    Install all plugins for project
-
-FRONTEND:
-
-    npm start
+    - In Backend create Virtual Env (virtualenv)
+        - Activate Virtual Env:
+            - Linux and Mac: env/bin/activate
+            - Windows: D:\\Desktop\GitHub\Django---React-Tutorial\env\Scripts\activate.bat
+    
+    - In Backend startproject (django): django-admin startproject name
+    
+    - In Backend rename app folder to 'src'
+    
+    - In Backend, set Workspace settings: 
+        {
+            "python.pythonPath": "C:\\Users\\maxen\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+            "team.showWelcomeMessage": false,
+            "editor.formatOnSave": true,
+            "python.linting.pep8Enabled": true,
+            "python.linting.pylintPath": "/path/to/pylint",
+            "python.linting.pylintArgs": [
+                "--load-plugins=pylint_django"
+            ],
+            "python.linting.pylintEnabled": true,
+            "[python]": {
+                "editor.formatOnSave": true
+            },
+            "python.venvPath": "os.environ['VIRTUAL_ENV']"
+        }
+    
+    - In Frontend startapp: create-react-app name (gui)
+    - In Frontend to launch React: npm start
+    

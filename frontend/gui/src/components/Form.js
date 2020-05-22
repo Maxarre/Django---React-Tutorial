@@ -3,12 +3,12 @@ import { Form, Input, Button } from 'antd';
 // import renderEmpty from 'antd/lib/config-provider/renderEmpty';
 import axios from "axios";
 
-const CustomForm = () => {
+class CustomForm extends React.Component {
 
     handleFormSubmit = (event, requestType, articleID) => {
         const title = event.target.elements.title.value;
         const content = event.target.elements.content.value;
-
+        event.preventDefault();
         switch ( requestType ) {
             case 'post':
                 return axios.post('http://127.0.0.1:8000/api/', {

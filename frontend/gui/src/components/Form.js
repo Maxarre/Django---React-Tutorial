@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Button } from 'antd';
+import { Form, Input } from 'antd';
 // import renderEmpty from 'antd/lib/config-provider/renderEmpty';
 import axios from "axios";
 
@@ -8,7 +8,7 @@ class CustomForm extends React.Component {
     handleFormSubmit = (event, requestType, articleID) => {
         const title = event.target.elements.title.value;
         const content = event.target.elements.content.value;
-        event.preventDefault();
+        // event.preventDefault();
         switch ( requestType ) {
             case 'post':
                 return axios.post('http://127.0.0.1:8000/api/', {
@@ -30,7 +30,7 @@ class CustomForm extends React.Component {
     render() {
         return (
         <div>
-            <Form
+            <form
                 onSubmit={event =>
                     this.handleFormSubmit(
                         event,
@@ -46,11 +46,11 @@ class CustomForm extends React.Component {
                 <Input name="content" placeholder="Put Content" />
                 </Form.Item>
                 <Form.Item>
-                <Button type="primary" htmlType="submit">
+                <button type="primary" htmlType="submit">
                     {this.props.btnText}
-                </Button>
+                </button>
                 </Form.Item>
-            </Form>
+            </form>
         </div>
         );
     }
